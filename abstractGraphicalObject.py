@@ -9,7 +9,7 @@ class AbstractGraphicalObject(GraphicalObject):
         self.hotPoints = points
         self.hotPointSelected = [False] * len(points)
         self.selected = False
-        self.listeners = List[GraphicalObjectListener]
+        self.listeners = []
 
     def addGraphicalObjectListener(self, listener: GraphicalObjectListener) -> None:
         self.listeners.append(listener)

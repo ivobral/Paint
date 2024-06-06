@@ -8,12 +8,12 @@ from oval import Oval
 from point import Point
 from rectangle import Rectangle
 from renderer import Renderer
-from vectorGraphicsApp import VectorGraphicsApp
+from GUI import GUI
 from tkinter import *
 
 # working before 1 +
 root = Tk()
-VectorGraphicsApp(root, width=400, height=400, bg="white")
+GUI(root, width=400, height=400, bg="white")
 root.mainloop()
 
 # working before 2 +

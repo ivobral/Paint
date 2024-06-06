@@ -45,7 +45,7 @@ class GraphicalObject(ABC):
     @abstractmethod
     def translate(self, delta: Point) -> None:
         pass
-    """
+    
     @abstractmethod
     def getBoundingBox(self) -> Rectangle:
         pass
@@ -53,13 +53,11 @@ class GraphicalObject(ABC):
     @abstractmethod
     def selectionDistance(self, mousePoint: Point) -> float:
         pass
-    """
-    """
+
     # Podrška za crtanje (dio mosta)
     @abstractmethod
     def render(self, renderer: Renderer) -> None:
         pass
-    """
 
     # Observer za dojavu promjena modelu
     @abstractmethod
@@ -70,7 +68,6 @@ class GraphicalObject(ABC):
     def removeGraphicalObjectListener(self, listener: GraphicalObjectListener) -> None:
         pass
 
-    """
     # Podrška za prototip (alatna traka, stvaranje objekata u crtežu, ...)
     @abstractmethod
     def getShapeName(self) -> str:
@@ -79,8 +76,8 @@ class GraphicalObject(ABC):
     @abstractmethod
     def duplicate(self) -> GraphicalObject:
         pass
-    """
-    """
+
+    
     # Podrška za snimanje i učitavanje
     @abstractmethod
     def getShapeID(self) -> str:
@@ -93,4 +90,3 @@ class GraphicalObject(ABC):
     @abstractmethod
     def save(self, rows: List[str]) -> None:
         pass
-    """
